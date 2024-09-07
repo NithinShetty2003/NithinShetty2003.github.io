@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nithin Shetty - Portfolio</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth; /* Enable smooth scrolling */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            color: #cce6ff;
+        }
+
+        /* Button Styling */
+        .resume-button {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .resume-button:hover {
+            background-color: #005bb5;
+        }
+
+        /* Main Section Styling */
+        section {
+            padding: 100px 20px; /* Padding increased to ensure visibility */
+            margin-top: 80px;
+        }
+
+        /* Scroll Padding to Offset Fixed Header */
+        section {
+            scroll-margin-top: 80px; /* Offset for fixed header */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #0073e6;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #0073e6;
+            display: inline-block;
+        }
+
+        p, li {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #f1f9ff;
+            margin: 10px 0;
+            padding: 20px;
+            border-left: 5px solid #0073e6;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        ul li:hover {
+            background-color: #e6f2ff;
+        }
+
+        /* About Section with Photo */
+        .about {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .about img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 3px solid #0073e6;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        /* Contact Section */
+        .contact {
+            text-align: center;
+            padding: 50px;
+            background-color: #f5f7fa;
+        }
+
+        .contact p {
+            font-size: 1.2rem;
+        }
+
+        .contact a {
+            color: #0073e6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact a:hover {
+            color: #005bb5;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0073e6;
+            color: white;
+            font-size: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav a {
+                font-size: 1rem;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .about {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about img {
+                margin: 0 0 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Nithin Shetty - AI/ML Engineer</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#internships">Internships</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="resume.html" class="resume-button">Resume</a> <!-- Resume Button -->
+        </nav>
+    </header>
+
+    <section id="about" class="container">
+        <div class="about">
+            <!-- Add your image URL here -->
+            <img src="path_to_your_photo.jpg" alt="Nithin Shetty">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>
+                    I am Nithin Shetty, from Belthangady, Karnataka, India. I am a passionate Artificial Intelligence and Machine Learning Engineer with experience in developing and optimizing machine learning models. I am eager to collaborate with a team to tackle complex challenges and contribute to cutting-edge projects.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="container">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Programming Languages:</strong> Python, C, MySQL, HTML5, Java</li>
+            <li><strong>Tools:</strong> Jupyter Notebook, VSCode, IDLE</li>
+            <li><strong>Data Science & Machine Learning:</strong> Numpy, Matplotlib, Seaborn, Pandas</li>
+            <li><strong>Soft Skills:</strong> Teamwork, Leadership, Communication</li>
+        </ul>
+    </section>
+
+    <section id="internships" class="container">
+        <h2>Internships</h2>
+        <ul>
+            <li><strong>AI/ML & Deep Learning Internship (IIITA, Dec 2022 - Jan 2023):</strong> Gained hands-on experience in AI, ML, and DL with Python.</li>
+            <li><strong>Social Connect through Field Visit (Comed Kares Center, Oct 2023 - Nov 2023):</strong> Analyzed air quality, proposed solutions to mitigate pollution.</li>
+            <li><strong>Data Science Hybrid Internship (May 2024 - July 2024):</strong> Practical expertise in supervised and unsupervised learning, recommendation systems, NLP.</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Airline Database Management System:</strong> Developed a system for managing flight bookings using SQL, HTML5, CSS, JavaScript, PHP.</li>
+            <li><strong>Air Quality Improvement System:</strong> Designed a system for improving air quality using water filtration and plant growth management.</li>
+            <li><strong>First Aid Chatbot:</strong> Built a chatbot providing first aid advice using NLP, with a user-friendly web interface.</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p><strong>Email:</strong> <a href="mailto:nithinshetty949@gmail.com">nithinshetty949@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/NithinShetty2003" target="_blank">linkedin.com/in/NithinShetty2003</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/NithinShetty2003" target="_blank">github.com/NithinShetty2003</a></p>
+    </section>
+
+    <footer>
+        <p>© 2024 Nithin Shetty</p>
+    </footer>
+
+</body>
+</html>
